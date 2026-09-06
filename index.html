@@ -3,8 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Phaneendra Katakam — Cloud Engineer, Applied AI Builder, and aspiring Forward Deployed Engineer." />
+  <meta name="description" content="Phaneendra Katakam — Cloud Engineer and Applied AI Builder creating grounded RAG, agentic AI, and production-oriented systems for real-world problems." />
   <meta name="theme-color" content="#07111f" />
+  <meta property="og:title" content="Phaneendra Katakam | Cloud × AI × Real-World Impact" />
+  <meta property="og:description" content="Cloud Engineer building practical applied AI systems across RAG, agentic workflows, and production operations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://phaneendrakatakam.github.io/" />
+  <meta name="twitter:card" content="summary" />
   <title>Phaneendra Katakam | Cloud × AI × Real-World Impact</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -31,10 +36,10 @@
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact" data-contact-trigger>Contact</a>
     </nav>
 
-    <a class="btn btn-primary compact" href="#contact">Let’s Connect →</a>
+    <a class="btn btn-primary compact" href="#contact" data-contact-trigger>Let’s Connect →</a>
   </header>
 
   <main>
@@ -44,19 +49,31 @@
         <h1>Phaneendra<br><span>Katakam</span></h1>
         <p class="role-line">Cloud Engineer <b>→</b> Applied AI Builder <b>→</b> Aspiring Forward Deployed Engineer</p>
         <p class="hero-description">
-          I build AI systems that investigate, retrieve, reason and help teams solve real-world problems —
-          combining cloud infrastructure, production operations and applied AI.
+          I build practical AI systems that retrieve evidence, investigate problems, and support reliable decisions —
+          combining production operations, cloud infrastructure, and applied AI engineering.
         </p>
+        <div class="hero-tags" aria-label="Focus areas">
+          <span>AWS SAP-C02</span>
+          <span>RAG</span>
+          <span>Agentic AI</span>
+          <span>Production Operations</span>
+        </div>
 
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">Explore My Work →</a>
           <a class="btn btn-outline" href="assets/resume/Phaneendra_Katakam.pdf" target="_blank" rel="noopener">↓ View Resume</a>
         </div>
 
-        <div class="social-row">
-          <a href="https://www.linkedin.com/in/phaneendra-katakam-5375471b7/" target="_blank" rel="noopener">in&nbsp; LinkedIn</a>
-          <a href="https://github.com/phaneendrakatakam" target="_blank" rel="noopener">⌁&nbsp; GitHub</a>
-          <a href="mailto:phaneendrakatakam@gmail.com">✉&nbsp; Email</a>
+        <div class="social-row" aria-label="Contact links">
+          <a class="social-link" href="https://www.linkedin.com/in/phaneendra-katakam-5375471b7/" target="_blank" rel="noopener noreferrer" aria-label="Open Phaneendra Katakam on LinkedIn" title="Open LinkedIn">
+            <span class="social-symbol">in</span><span>LinkedIn</span>
+          </a>
+          <a class="social-link" href="https://github.com/phaneendrakatakam" target="_blank" rel="noopener noreferrer" aria-label="Open Phaneendra Katakam on GitHub" title="Open GitHub">
+            <span class="social-symbol">⌁</span><span>GitHub</span>
+          </a>
+          <a class="social-link" href="mailto:phaneendrakatakam@gmail.com" aria-label="Email Phaneendra Katakam" title="Send email">
+            <span class="social-symbol">✉</span><span>Email</span>
+          </a>
         </div>
       </div>
 
@@ -155,56 +172,66 @@
           <div class="project-number">01</div>
           <div class="project-content">
             <div class="project-icon">▱</div>
+            <div class="project-kicker">DOCUMENT INTELLIGENCE · V3</div>
             <h3>KnowledgeHub AI</h3>
             <p class="project-subtitle">Multi-User Multimodal RAG Knowledge Platform</p>
             <p>
-              Enterprise document intelligence platform with hybrid retrieval, source traceability,
-              multimodal understanding, conversational follow-ups and isolated user knowledge bases.
+              A private-document intelligence workspace that combines hybrid semantic + lexical retrieval,
+              reranking, grounded generation, source traceability, multimodal understanding, and user-isolated knowledge bases.
             </p>
+            <div class="project-proof" aria-label="KnowledgeHub highlights">
+              <span><b>107</b> passing tests</span>
+              <span>Multi-user isolation</span>
+              <span>Multimodal retrieval</span>
+            </div>
             <div class="chips">
               <span>RAG</span><span>Gemini</span><span>FastAPI</span><span>PostgreSQL</span><span>pgvector</span>
             </div>
-            <a class="project-link" href="https://github.com/phaneendrakatakam/KnowledgeHub-AI" target="_blank" rel="noopener">View Project →</a>
+            <a class="project-link" href="https://github.com/phaneendrakatakam/KnowledgeHub-AI" target="_blank" rel="noopener noreferrer" aria-label="Open KnowledgeHub AI repository on GitHub">View Project → <small>GitHub Repository</small></a>
           </div>
-          <div class="project-mockup" aria-hidden="true">
-            <div class="mockup-bar"><i></i><i></i><i></i></div>
-            <div class="mockup-body">
-              <aside><b>KH</b><span>Chats</span><span>Docs</span><span>Sources</span></aside>
-              <div class="mockup-screen">
-                <small>KNOWLEDGEHUB AI</small>
-                <strong>Ask anything<br>from your knowledge base</strong>
-                <div class="fake-input">Type your question… <b>→</b></div>
-              </div>
-            </div>
-          </div>
+
+          <a class="project-shot" href="https://github.com/phaneendrakatakam/KnowledgeHub-AI" target="_blank" rel="noopener noreferrer" aria-label="Open KnowledgeHub AI repository">
+            <img
+              src="https://raw.githubusercontent.com/phaneendrakatakam/KnowledgeHub-AI/master/screenshots/V3/04-chart-reasoning-and-grounded-analysis.png"
+              alt="KnowledgeHub AI V3 showing chart reasoning and grounded analysis"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            />
+            <span class="shot-label">Actual V3 UI · Grounded chart analysis ↗</span>
+          </a>
         </article>
 
         <article class="project-card support reveal delay-1">
           <div class="project-number">02</div>
           <div class="project-content">
             <div class="project-icon">◉</div>
+            <div class="project-kicker">AGENTIC SUPPORT · V3</div>
             <h3>SupportPilot AI</h3>
-            <p class="project-subtitle">Agentic Support Investigation & Resolution System</p>
+            <p class="project-subtitle">Human-in-the-Loop AI Support Investigation & Resolution System</p>
             <p>
-              AI support agent that performs multi-tool investigations, generates evidence-backed
-              recommendations and includes human-in-the-loop controls, rollback and auditability.
+              An agentic support system that investigates with read-only tools, gathers evidence, recommends controlled actions,
+              requires human approval before mutation, verifies the outcome, and produces grounded customer-safe responses.
             </p>
+            <div class="project-proof" aria-label="SupportPilot highlights">
+              <span>Read-only AI tools</span>
+              <span>Human approval gate</span>
+              <span>Post-action verification</span>
+            </div>
             <div class="chips">
               <span>Agentic AI</span><span>Tool Calling</span><span>Human-in-the-Loop</span><span>Auditability</span>
             </div>
-            <a class="project-link" href="https://github.com/phaneendrakatakam/SupportPilot-AI" target="_blank" rel="noopener">View Project →</a>
+            <a class="project-link" href="https://github.com/phaneendrakatakam/SupportPilot-AI" target="_blank" rel="noopener noreferrer" aria-label="Open SupportPilot AI repository on GitHub">View Project → <small>GitHub Repository</small></a>
           </div>
-          <div class="project-mockup support-ui" aria-hidden="true">
-            <div class="mockup-bar"><i></i><i></i><i></i></div>
-            <div class="support-panel">
-              <strong>SupportPilot AI</strong>
-              <span class="active">● Investigating across systems…</span>
-              <span>✓ Checking payment status</span>
-              <span>✓ Fetching subscription data</span>
-              <span>○ Analyzing logs</span>
-              <span>○ Generating recommendation</span>
-            </div>
-          </div>
+
+          <a class="project-shot" href="https://github.com/phaneendrakatakam/SupportPilot-AI" target="_blank" rel="noopener noreferrer" aria-label="Open SupportPilot AI repository">
+            <img
+              src="https://raw.githubusercontent.com/phaneendrakatakam/SupportPilot-AI/master/docs/V3/v3_03_operations_approved_awaiting_execution_final.png"
+              alt="SupportPilot AI V3 operations interface showing an approved action awaiting explicit execution"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            />
+            <span class="shot-label">Actual V3 UI · Human approval → explicit execution ↗</span>
+          </a>
         </article>
       </div>
     </section>
@@ -234,8 +261,8 @@
     <section id="experience" class="section-shell section-block split-section">
       <div class="quote-card reveal">
         <span class="quote-mark">“</span>
-        <p>I enjoy working at the intersection of infrastructure, AI and real-world problems.</p>
-        <small>— Phaneendra Katakam</small>
+        <p id="portfolioQuote">Good engineering is not only about building systems — it is about understanding what the system needs to solve.</p>
+        <small id="portfolioQuoteAuthor">— Phaneendra Katakam</small>
       </div>
 
       <div class="experience-card reveal delay-1">
@@ -279,11 +306,51 @@
         <div>
           <h3>Let’s Build Something Meaningful</h3>
           <p>Open to opportunities in Forward Deployed Engineering, Applied AI and AI Solutions Engineering.</p>
-          <a class="btn btn-primary" href="mailto:phaneendrakatakam@gmail.com">Get In Touch →</a>
+          <a class="btn btn-primary" href="#contact" data-contact-trigger>Get In Touch →</a>
         </div>
       </div>
     </section>
   </main>
+
+
+  <div class="contact-modal" id="contactModal" aria-hidden="true">
+    <div class="contact-modal-backdrop" data-contact-close></div>
+    <section class="contact-modal-panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+      <button class="contact-modal-close" type="button" aria-label="Close contact options" data-contact-close>×</button>
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2 id="contactModalTitle">Choose how you’d like to reach me</h2>
+      <p class="contact-modal-intro">You can view my professional profile, explore my code, or email me directly.</p>
+
+      <div class="contact-options">
+        <a class="contact-option linkedin" href="https://www.linkedin.com/in/phaneendra-katakam-5375471b7/" target="_blank" rel="noopener noreferrer">
+          <span class="contact-option-icon">in</span>
+          <span class="contact-option-copy">
+            <strong>LinkedIn</strong>
+            <small>linkedin.com/in/phaneendra-katakam-5375471b7</small>
+          </span>
+          <span class="contact-option-arrow">↗</span>
+        </a>
+
+        <a class="contact-option github" href="https://github.com/phaneendrakatakam" target="_blank" rel="noopener noreferrer">
+          <span class="contact-option-icon">⌁</span>
+          <span class="contact-option-copy">
+            <strong>GitHub</strong>
+            <small>github.com/phaneendrakatakam</small>
+          </span>
+          <span class="contact-option-arrow">↗</span>
+        </a>
+
+        <a class="contact-option email" href="mailto:phaneendrakatakam@gmail.com">
+          <span class="contact-option-icon">✉</span>
+          <span class="contact-option-copy">
+            <strong>Email</strong>
+            <small>phaneendrakatakam@gmail.com</small>
+          </span>
+          <span class="contact-option-arrow">→</span>
+        </a>
+      </div>
+    </section>
+  </div>
 
   <footer class="footer section-shell">
     <div class="footer-brand"><b>PK</b> Phaneendra Katakam <span>|</span> Cloud × AI × Real-World Impact</div>
@@ -291,6 +358,7 @@
     <div class="footer-motto">Build · Learn · Solve · Repeat →</div>
   </footer>
 
+  <script src="js/portfolio-config.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

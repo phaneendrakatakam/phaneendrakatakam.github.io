@@ -42,3 +42,29 @@ GitHub Pages will redeploy the latest version automatically.
 - `css/style.css` — full responsive visual design
 - `js/main.js` — mobile navigation, scroll reveal, active navigation
 - `assets/resume/Phaneendra_Katakam.pdf` — resume used by the Resume button
+
+
+## Change the portfolio quote
+
+Open:
+
+`js/portfolio-config.js`
+
+Change only the `quote` value, save, commit, and push. GitHub Pages will redeploy automatically.
+
+A shortlist is included in `QUOTE_OPTIONS.md`.
+
+
+## V1.4 recruiter polish
+
+- Selected quote: “Good engineering is not only about building systems — it is about understanding what the system needs to solve.”
+- Refined hero copy to emphasize practical AI + production operations.
+- Added recruiter-scan focus chips: AWS SAP-C02, RAG, Agentic AI, Production Operations.
+- Rewrote project cards around actual V3 capabilities.
+- Replaced decorative project mockups with real V3 screenshots loaded from the public GitHub repositories.
+- Preserved the contact modal and direct LinkedIn / GitHub / Email links.
+
+### Screenshot note
+
+The project screenshots are loaded from the public `KnowledgeHub-AI` and `SupportPilot-AI` repositories through `raw.githubusercontent.com`.
+If either repository becomes private or the image path is renamed, update the corresponding `<img src="...">` in `index.html`.
