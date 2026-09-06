@@ -699,3 +699,52 @@ body.modal-open{overflow:hidden}
     grid-template-columns:1fr auto;
   }
 }
+
+
+/* V1.6 header edge / overflow polish */
+.topbar{
+  width:min(1480px,calc(100% - 32px));
+  margin:8px auto 0;
+  min-height:82px;
+  padding:0 18px;
+  gap:24px;
+  top:8px;
+  border:1px solid rgba(137,178,222,.12);
+  border-radius:16px;
+  box-shadow:0 12px 34px rgba(0,0,0,.18);
+  overflow:visible;
+}
+
+.brand{
+  padding-left:2px;
+}
+
+.brand-mark{
+  display:inline-block;
+  line-height:1;
+  padding:3px 1px 3px 0;
+}
+
+.topbar > .compact{
+  margin-right:0;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+
+@media (max-width:1180px){
+  .topbar{
+    width:min(100% - 28px,1480px);
+    padding:0 16px;
+    gap:18px;
+  }
+}
+
+@media (max-width:820px){
+  .topbar{
+    width:min(100% - 20px,1480px);
+    margin-top:6px;
+    top:6px;
+    padding:0 14px;
+    border-radius:14px;
+  }
+}
