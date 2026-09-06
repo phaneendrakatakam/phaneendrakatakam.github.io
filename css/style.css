@@ -748,3 +748,76 @@ body.modal-open{overflow:hidden}
     border-radius:14px;
   }
 }
+
+
+/* V1.7 definitive header containment fix */
+.topbar{
+  width:min(1480px,calc(100% - 48px));
+  margin:10px auto 0;
+  min-height:82px;
+  padding:0 28px;
+  gap:22px;
+  top:10px;
+  box-sizing:border-box;
+  border:1px solid rgba(137,178,222,.14);
+  border-radius:22px;
+  box-shadow:0 14px 38px rgba(0,0,0,.22);
+  overflow:hidden;
+}
+
+.brand{
+  min-width:0;
+  padding-left:4px;
+}
+
+.brand-mark{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:42px;
+  padding:4px 3px 4px 6px;
+  margin-left:0;
+  line-height:1;
+  overflow:visible;
+}
+
+.topbar > .compact{
+  margin-right:4px;
+  padding-left:20px;
+  padding-right:20px;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+
+@media (max-width:1180px){
+  .topbar{
+    width:min(100% - 36px,1480px);
+    padding:0 22px;
+    gap:18px;
+    border-radius:18px;
+  }
+  .brand-mark{
+    min-width:40px;
+    padding-left:5px;
+  }
+  .topbar > .compact{
+    margin-right:2px;
+  }
+}
+
+@media (max-width:820px){
+  .topbar{
+    width:min(100% - 24px,1480px);
+    margin-top:8px;
+    top:8px;
+    padding:0 16px;
+    border-radius:16px;
+  }
+  .brand{
+    padding-left:2px;
+  }
+  .brand-mark{
+    min-width:38px;
+    padding-left:4px;
+  }
+}
