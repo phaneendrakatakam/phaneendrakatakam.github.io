@@ -67,3 +67,22 @@ document.addEventListener('keydown', (event) => {
     closeContactModal();
   }
 });
+
+
+// Close the mobile navigation when the user taps outside the header.
+document.addEventListener('click', (event) => {
+  if (!nav?.classList.contains('open') || !menuButton) return;
+  const topbar = document.querySelector('.topbar');
+  if (topbar && !topbar.contains(event.target)) {
+    nav.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+  }
+});
+
+// Reset the mobile navigation when crossing back to desktop width.
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 820 && nav?.classList.contains('open')) {
+    nav.classList.remove('open');
+    menuButton?.setAttribute('aria-expanded', 'false');
+  }
+});
