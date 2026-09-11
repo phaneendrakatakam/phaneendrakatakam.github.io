@@ -13,9 +13,62 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="alternate icon" href="favicon.ico" />
   <title>Phaneendra Katakam | Cloud × AI × Real-World Impact</title>
-  <link rel="stylesheet" href="css/style.css?v=2.0" />
+  <link rel="stylesheet" href="css/style.css?v=2.9" />
+  <script src="https://code.iconify.design/iconify-icon/2.2.0/iconify-icon.min.js"></script>
 </head>
-<body>
+<body class="is-loading">
+  <div class="boot-screen" id="bootScreen" aria-hidden="true">
+    <div class="boot-shutters" aria-hidden="true">
+      <i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i>
+      <i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i>
+    </div>
+
+    <div class="boot-grid" aria-hidden="true"></div>
+    <div class="boot-flare" aria-hidden="true"></div>
+    <div class="boot-horizon" aria-hidden="true"></div>
+    <div class="boot-scan" aria-hidden="true"></div>
+    <div class="boot-energy" aria-hidden="true"></div>
+
+    <div class="boot-streaks" aria-hidden="true">
+      <i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i>
+      <i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i>
+    </div>
+
+    <div class="boot-stage">
+      <div class="boot-core" aria-hidden="true">
+        <i class="boot-ring ring-a"></i>
+        <i class="boot-ring ring-b"></i>
+        <i class="boot-ring ring-c"></i>
+        <strong>PK</strong>
+      </div>
+
+      <span class="boot-kicker">INITIALIZING // PORTFOLIO</span>
+
+      <div class="boot-name" aria-label="Phaneendra Katakam">
+        <span>Phaneendra</span>
+        <span>Katakam</span>
+      </div>
+
+      <div class="boot-beam" aria-hidden="true"><i></i></div>
+
+      <div class="boot-role-track" aria-label="Cloud Engineer to Applied AI Builder to Forward Deployed Engineering">
+        <span><iconify-icon icon="mdi:cloud-cog-outline"></iconify-icon>Cloud Engineer</span>
+        <b>→</b>
+        <span><iconify-icon icon="fluent-color:bot-sparkle-20"></iconify-icon>Applied AI Builder</span>
+        <b>→</b>
+        <span><iconify-icon icon="mdi:rocket-launch-outline"></iconify-icon>Forward Deployed Engineering</span>
+      </div>
+
+      <div class="boot-impact">CLOUD <i>×</i> AI <i>×</i> REAL-WORLD IMPACT</div>
+      <div class="boot-status"><span></span>SYSTEM ONLINE · ENTERING PORTFOLIO</div>
+    </div>
+
+    <span class="boot-coordinate boot-coordinate-a">PK / 2026</span>
+    <span class="boot-coordinate boot-coordinate-b">CLOUD × AI</span>
+    <span class="boot-coordinate boot-coordinate-c">BUILD · LEARN · SOLVE · REPEAT</span>
+  </div>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <canvas class="constellation" id="constellation" aria-hidden="true"></canvas>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="Back to top">
       <span class="brand-mark">PK</span>
@@ -71,7 +124,7 @@
           <span>to BUILDING<br>SYSTEMS<br>THAT THINK.</span>
         </div>
 
-        <svg class="mountains" viewBox="0 0 920 620" role="img" aria-label="Mountain-shaped career journey illustration">
+        <svg class="mountains" id="journeyMountains" viewBox="0 0 920 620" role="img" aria-label="Mountain-shaped career journey illustration">
           <defs>
             <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
               <stop offset="0%" stop-color="#071322"/>
@@ -106,8 +159,16 @@
           <path d="M0 455 L120 370 L215 432 L328 300 L421 418 L555 255 L640 330 L758 148 L920 410 L920 620 L0 620Z" fill="url(#mountainA)"/>
           <path d="M0 505 L118 438 L205 472 L315 390 L408 466 L548 354 L655 431 L802 290 L920 474 L920 620 L0 620Z" fill="#07111e" opacity=".9"/>
 
-          <path d="M116 500 C190 488 185 436 256 430 S336 395 383 377 S475 344 515 318 S590 286 638 260 S702 203 765 171"
+          <path id="careerPath" d="M116 500 C190 488 185 436 256 430 S336 395 383 377 S475 344 515 318 S590 286 638 260 S702 203 765 171"
                 fill="none" stroke="url(#route)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+          <path class="route-energy route-energy-halo"
+                d="M116 500 C190 488 185 436 256 430 S336 395 383 377 S475 344 515 318 S590 286 638 260 S702 203 765 171"
+                pathLength="100" fill="none" stroke="#69cfff" stroke-width="8" stroke-linecap="round"
+                vector-effect="non-scaling-stroke" aria-hidden="true"/>
+          <path class="route-energy route-energy-core"
+                d="M116 500 C190 488 185 436 256 430 S336 395 383 377 S475 344 515 318 S590 286 638 260 S702 203 765 171"
+                pathLength="100" fill="none" stroke="#e8fbff" stroke-width="2.5" stroke-linecap="round"
+                vector-effect="non-scaling-stroke" aria-hidden="true"/>
 
           <g class="route-node">
             <circle cx="116" cy="500" r="10" fill="#ffe45c"/><circle cx="116" cy="500" r="17" fill="none" stroke="#ffe45c" opacity=".35"/>
@@ -134,11 +195,18 @@
     </section>
 
     <section class="stats section-shell reveal" aria-label="Portfolio summary">
-      <div class="stat"><span class="stat-icon">◫</span><div><strong>2+</strong><small>Years of Experience</small></div></div>
-      <div class="stat"><span class="stat-icon">◇</span><div><strong>02+</strong><small>AI Projects</small></div></div>
-      <div class="stat"><span class="stat-icon">✦</span><div><strong>02</strong><small>AWS Certifications</small></div></div>
-      <div class="stat"><span class="stat-icon">◎</span><div><strong>∞</strong><small>Problems to Solve</small></div></div>
-      <div class="stat"><span class="stat-icon">♙</span><div><strong>Real-World</strong><small>Infrastructure × Intelligence × Impact</small></div></div>
+      <div class="stat">
+        <span class="stat-icon" aria-hidden="true"><iconify-icon icon="mdi:briefcase-outline"></iconify-icon></span>
+        <div><strong>2+</strong><small>Years of Experience</small></div>
+      </div>
+      <div class="stat">
+        <span class="stat-icon" aria-hidden="true"><iconify-icon icon="fluent-color:bot-sparkle-20"></iconify-icon></span>
+        <div><strong>02+</strong><small>AI Projects</small></div>
+      </div>
+      <div class="stat">
+        <span class="stat-icon" aria-hidden="true"><iconify-icon icon="mdi:certificate-outline"></iconify-icon></span>
+        <div><strong>02</strong><small>AWS Certifications</small></div>
+      </div>
     </section>
 
     <section id="projects" class="section-shell section-block">
@@ -147,9 +215,8 @@
         <h2>AI Systems for <span>Real-World Impact</span></h2>
       </div>
 
-      <div class="projects-grid">
-        <article class="project-card knowledge reveal">
-          <div class="project-number">01</div>
+      <div class="projects-grid projects-minimal">
+        <a class="project-card knowledge reveal" href="https://github.com/phaneendrakatakam/KnowledgeHub-AI" target="_blank" rel="noopener noreferrer" aria-label="Open KnowledgeHub AI repository on GitHub">
           <div class="project-content">
             <h3>KnowledgeHub AI</h3>
             <p class="project-subtitle">Multi-User Multimodal RAG Knowledge Platform</p>
@@ -157,22 +224,10 @@
               A private-document intelligence workspace that combines hybrid semantic + lexical retrieval,
               reranking, grounded generation, source traceability, multimodal understanding, and user-isolated knowledge bases.
             </p>
-            <div class="project-proof" aria-label="KnowledgeHub highlights">
-              <span><b>107</b> passing tests</span>
-              <span>Multi-user isolation</span>
-              <span>Multimodal retrieval</span>
-            </div>
-            <div class="chips">
-              <span>RAG</span><span>Gemini</span><span>FastAPI</span><span>PostgreSQL</span><span>pgvector</span>
-            </div>
-            <a class="project-link" href="https://github.com/phaneendrakatakam/KnowledgeHub-AI" target="_blank" rel="noopener noreferrer" aria-label="Open KnowledgeHub AI repository on GitHub">
-              View Project → <small>GitHub Repository</small>
-            </a>
           </div>
-        </article>
+        </a>
 
-        <article class="project-card support reveal delay-1">
-          <div class="project-number">02</div>
+        <a class="project-card support reveal delay-1" href="https://github.com/phaneendrakatakam/SupportPilot-AI" target="_blank" rel="noopener noreferrer" aria-label="Open SupportPilot AI repository on GitHub">
           <div class="project-content">
             <h3>SupportPilot AI</h3>
             <p class="project-subtitle">Human-in-the-Loop AI Support Investigation & Resolution System</p>
@@ -180,41 +235,60 @@
               An agentic support system that investigates with read-only tools, gathers evidence, recommends controlled actions,
               requires human approval before mutation, verifies the outcome, and produces grounded customer-safe responses.
             </p>
-            <div class="project-proof" aria-label="SupportPilot highlights">
-              <span>Read-only AI tools</span>
-              <span>Human approval gate</span>
-              <span>Post-action verification</span>
-            </div>
-            <div class="chips">
-              <span>Agentic AI</span><span>Tool Calling</span><span>Human-in-the-Loop</span><span>Auditability</span>
-            </div>
-            <a class="project-link" href="https://github.com/phaneendrakatakam/SupportPilot-AI" target="_blank" rel="noopener noreferrer" aria-label="Open SupportPilot AI repository on GitHub">
-              View Project → <small>GitHub Repository</small>
-            </a>
           </div>
-        </article>
+        </a>
       </div>
     </section>
 
-    <section id="skills" class="section-shell section-block">
+    
+<section id="skills" class="section-shell section-block">
       <div class="section-heading reveal">
         <p class="eyebrow">TECH STACK</p>
         <h2>Tools I Work With</h2>
       </div>
-      <div class="skill-grid reveal">
-        <div class="skill"><b>Py</b><span>Python</span></div>
-        <div class="skill"><b>⚡</b><span>FastAPI</span></div>
-        <div class="skill"><b>PG</b><span>PostgreSQL</span></div>
-        <div class="skill"><b>V</b><span>pgvector</span></div>
-        <div class="skill"><b>✦</b><span>Gemini</span></div>
-        <div class="skill"><b>AWS</b><span>AWS</span></div>
-        <div class="skill"><b>AZ</b><span>Azure</span></div>
-        <div class="skill"><b>NR</b><span>New Relic</span></div>
-        <div class="skill"><b>PD</b><span>PagerDuty</span></div>
-        <div class="skill"><b>OD</b><span>Octopus Deploy</span></div>
-        <div class="skill"><b>Git</b><span>Git</span></div>
-        <div class="skill"><b>GH</b><span>GitHub</span></div>
-        <div class="skill"><b>J</b><span>Jira</span></div>
+
+      <div class="skills-categories reveal" aria-label="Technical skills by category">
+        <section class="skill-group cloud-group">
+          <h3><iconify-icon icon="mdi:cloud-cog-outline"></iconify-icon>Cloud & Observability</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><iconify-icon icon="logos:aws"></iconify-icon><span>AWS</span></li>
+            <li class="skill-item"><iconify-icon icon="logos:microsoft-azure"></iconify-icon><span>Microsoft Azure</span></li>
+            <li class="skill-item"><iconify-icon icon="simple-icons:newrelic" style="color:#1ce783"></iconify-icon><span>New Relic</span></li>
+            <li class="skill-item"><iconify-icon icon="simple-icons:pagerduty" style="color:#06ac38"></iconify-icon><span>PagerDuty</span></li>
+            <li class="skill-item"><iconify-icon icon="simple-icons:amazoncloudwatch" style="color:#ff9900"></iconify-icon><span>CloudWatch</span></li>
+          </ul>
+        </section>
+
+        <section class="skill-group ai-group">
+          <h3><iconify-icon icon="fluent-color:bot-sparkle-20"></iconify-icon>Applied AI & Backend</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><iconify-icon icon="logos:python"></iconify-icon><span>Python</span></li>
+            <li class="skill-item"><iconify-icon icon="logos:fastapi-icon"></iconify-icon><span>FastAPI</span></li>
+            <li class="skill-item"><iconify-icon icon="logos:google-gemini"></iconify-icon><span>Gemini</span></li>
+            <li class="skill-item"><iconify-icon icon="mdi:file-search-outline" style="color:#67d4ff"></iconify-icon><span>RAG</span></li>
+            <li class="skill-item"><iconify-icon icon="fluent-color:bot-sparkle-20"></iconify-icon><span>Agentic AI</span></li>
+          </ul>
+        </section>
+
+        <section class="skill-group data-group">
+          <h3><iconify-icon icon="mdi:database-search-outline"></iconify-icon>Data & Retrieval</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><iconify-icon icon="logos:postgresql"></iconify-icon><span>PostgreSQL</span></li>
+            <li class="skill-item"><iconify-icon icon="mdi:database-outline" style="color:#9f8cff"></iconify-icon><span>pgvector</span></li>
+            <li class="skill-item"><iconify-icon icon="vscode-icons:file-type-sql"></iconify-icon><span>SQL</span></li>
+            <li class="skill-item"><iconify-icon icon="mdi:database-search-outline" style="color:#5fe0be"></iconify-icon><span>Semantic Retrieval</span></li>
+          </ul>
+        </section>
+
+        <section class="skill-group delivery-group">
+          <h3><iconify-icon icon="mdi:source-branch"></iconify-icon>Delivery & Collaboration</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><iconify-icon icon="simple-icons:octopusdeploy" style="color:#2f93e0"></iconify-icon><span>Octopus Deploy</span></li>
+            <li class="skill-item"><iconify-icon icon="logos:git-icon"></iconify-icon><span>Git</span></li>
+            <li class="skill-item"><iconify-icon icon="simple-icons:github" style="color:#ffffff"></iconify-icon><span>GitHub</span></li>
+            <li class="skill-item"><iconify-icon icon="logos:jira"></iconify-icon><span>Jira</span></li>
+          </ul>
+        </section>
       </div>
     </section>
 
@@ -315,7 +389,7 @@
     <div class="footer-motto">Build · Learn · Solve · Repeat →</div>
   </footer>
 
-  <script src="js/portfolio-config.js?v=2.0"></script>
-  <script src="js/main.js?v=2.0"></script>
+  <script src="js/portfolio-config.js?v=2.9"></script>
+  <script src="js/main.js?v=2.9"></script>
 </body>
 </html>

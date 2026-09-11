@@ -75,3 +75,16 @@ This repository is the GitHub Pages user site for `phaneendrakatakam`, so the pr
 ```text
 https://phaneendrakatakam.github.io
 ```
+
+
+## V2.5 skill icons
+
+Uses real visual icons in the Skills section via Iconify CDN so the stack feels closer to the provided reference.
+
+
+## V2.6 — Cinematic polish
+
+- Reordered skills around the Cloud → AI story.
+- Increased real skill icon size and refined spacing/card hierarchy.
+- Expanded the opening into a ~2.4s cinematic three-act sequence with letterbox bars, energy streaks, kinetic role progression, and a shutter/energy reveal.
+- Kept the rest of the portfolio interactions fast and responsive.
